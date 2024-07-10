@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Connect Bluetooth" />
+
+    <Button
+            android:id="@+id/btnSendSMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnConnect"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Send SMS"/>
+    <Button
+            android:id="@+id/btnMakeCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSendSMS"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Make call"/>
+    <TextView
+            android:id="@+id/tvCoordinates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSendSMS"
+            android:layout_marginTop="81dp"
+            android:layout_centerHorizontal="true"
+            android:text="Received Coordinates"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:autoLink="web"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="openLink"/>
+    <Button
+            android:id="@+id/btnCheckStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCoordinates"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="Check status" android:layout_marginBottom="-89dp"/>
+    <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnCheckStatus"
+            android:layout_marginTop="100dp"
+            android:text="Status: "
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+
+    <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:layout_below="@id/tvStatus"
+            android:hint="Phone Number"/>
+
+    <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_below="@id/etPhoneNumber"
+            android:layout_marginTop="10dp"
+            android:hint="User Name"/>
+
+    <EditText
+            android:id="@+id/etDeviceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_below="@id/etUserName"
+            android:layout_marginTop="10dp"
+            android:hint="Device Name"/>
+
+    <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/etDeviceName"
+            android:text="Save"/>
+
+</RelativeLayout>
