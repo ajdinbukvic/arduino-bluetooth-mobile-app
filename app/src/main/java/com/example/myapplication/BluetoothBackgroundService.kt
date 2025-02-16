@@ -33,7 +33,7 @@ class BluetoothBackgroundService : Service() {
     private var bluetoothAdapter: BluetoothAdapter? = BluetoothAdapter.getDefaultAdapter()
     private var bluetoothSocket: BluetoothSocket? = null
     var isConnected: Boolean = false
-    private val phoneNumber = "061696022"
+    private val phoneNumber = ""
     private val handler = Handler(Looper.getMainLooper())
     private val checkInterval: Long = 5000 // Provjerava svakih 5 sekundi
     private val binder = LocalBinder()
